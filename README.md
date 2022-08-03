@@ -27,10 +27,10 @@
 
 ## El Repositorio cuenta con Carpetas donde se especifica las distintas actividades solicitadas por los docentes de la materia.
 
-* Carpeta 1: Especificaciones de módulos ESP8266 y ESP32
-* 
-* Carpeta 2: Microcontroladores de 8 bits
-* 
+* Carpeta Proyecto1: Especificaciones (Datasheet) de módulos ESP8266 y ESP32
+
+* Carpeta Proyecto2: Microcontroladores de 8 bits
+
              En la misma se encuentra la siguiente actividad que se encuentra en etapa de desarrollo:
              
              Actividad #1
