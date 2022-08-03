@@ -2,7 +2,7 @@
 
 # Grupo 3
 
-### Grupo para la practica anual de la materia Electronica Microcontrolada
+### Grupo para la práctica anual de la materia Electrónica Microcontrolada
 
 ## Docentes:
 
@@ -25,25 +25,18 @@
 
 - Leonardo Gonzalez
 
-## Actividad
+## El Repositorio cuenta con Carpetas donde se especifica las distintas actividades solicitadas por los docentes de la materia.
 
-Crear un informe sobre cada SOC ESP (32 o 8266) donde se deberá detallar:
-- Especificación del módulo.
-- Tipos de versiones.
-- Distribución de pines de módulos ESP(X), Wemos Mini, Nodemcu. 
-- IDE y Lenguajes: Arduino (C++), Thonny (uPython), VSC (C++, uPython).
+* Carpeta 1: Especificaciones de módulos ESP8266 y ESP32
+* Carpeta 2: Microcontroladores de 8 bits
+             En la misma se encuentra la siguiente actividad que se encuentra en etapa de desarrollo:
+             Actividad #1
+                1) Crear un usuario en la pagina de Microchip: https://www.microchip.com/
+                2) AVR : Ingresar a la pagina: https://microchipdeveloper.com/8avr:avrcore
+                  a) Crear cuaderno PDF de la carpeta “Estructura del controlador AVR de 8 bits”
+                  b) Crear cuaderno PDF de la carpeta “Periféricos AVR de 8 bits”
+                3) AVR: En la misma pagina, ir a la carpeta: “Introducción a los micros AVR” y realizar las 4 primeras capacitaciones.
+                4) PIC: Ingresar a la pagina: https://microchipdeveloper.com/8bit:emr
+                  a) Crear cuaderno PDF de la carpeta “Referencia de la gama media mejorada”, Incluir todas las subcarpetas hasta Interrupciones.
+                  b) Entrar a la carpeta “configuración del programa de ejemplo” y realizar las 4 practicas.
 
-Este material se debe tomar de la introducción de cada SOC que se muestra en la página:
-
-https://randomnerdtutorials.com/
-
-Repositorios por grupos, para subir el informe. 
-
-Hacer un informe por cada soc, los mismos  deben tener las siguientes caracteristicas:
-+ Formato: A4 , PDF
-+ Margen: Estrecho
-+ Carrera, Materia, Docentes. 
-+ Titulo : SOC XXXX
-+ Fecha, y Lugar. 
-+ Numero de grupo e Integrantes del mismo. 
-+ Desarrollo de los temas solicitados
