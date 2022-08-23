@@ -31,6 +31,8 @@
 
 * Carpeta Proyecto2: Microcontroladores de 8 bits
 
-* Proyecto Prácticas de I/O en sistemas embebidos v1.0
+* Carpeta Prácticas de I/O en sistemas embebidos v1.0
+
+* Carpeta Shields
 
             
