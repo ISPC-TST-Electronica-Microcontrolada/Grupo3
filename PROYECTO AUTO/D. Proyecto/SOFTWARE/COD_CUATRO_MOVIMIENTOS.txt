@@ -1,0 +1,108 @@
+#include <Arduino.h>
+
+//nombramos pines
+  #define ENA_IZQ 15
+  #define IN1 2
+  #define IN2 0
+
+  #define ENB_DER 17
+  #define IN3 4
+  #define IN4 16
+
+void setup() {
+//configuro pines
+  pinMode(ENA_IZQ, OUTPUT);
+  pinMode(IN1,OUTPUT);
+  pinMode(IN2,OUTPUT);
+  pinMode(ENB_DER,OUTPUT);
+  pinMode(IN3,OUTPUT);
+  pinMode(IN4,OUTPUT);
+
+}
+//Declaro funciones
+
+void HABILITAR_MOTORES() {
+  analogWrite(ENA_IZQ, 200); //encendemos motores IZQ al 80% de su potencia
+  analogWrite(ENB_DER, 200); //encendemos motores DER al 80% de su potencia
+}
+
+void AVANZAR() {
+  HABILITAR_MOTORES();
+
+  //HACIENDO QUE EL MOTOR A (LADO IZQ) GIRE EN SENTIDO HORARIO
+  digitalWrite(IN1,HIGH);
+  digitalWrite(IN2,LOW);
+  
+  //HACIENDO QUE EL MOTOR B (LADO DER) GIRE EN SENTIDO HORARIO
+  digitalWrite(IN3,HIGH);
+  digitalWrite(IN4,LOW);
+}
+
+void RETROCESO(){
+  HABILITAR_MOTORES();
+
+   //HACIENDO QUE EL MOTOR A (LADO IZQ) GIRE EN SENTIDO ANTI HORARIO
+  digitalWrite(IN1,LOW);
+  digitalWrite(IN2,HIGH);
+  
+  //HACIENDO QUE EL MOTOR B (LADO DER) GIRE EN ANTI HORARIO
+  digitalWrite(IN3,LOW);
+  digitalWrite(IN4,HIGH);
+}
+
+void STOP() {
+  analogWrite(ENA_IZQ, 0);  //apago motores IZQ
+  analogWrite(ENB_DER, 0); //apago motores DER
+  delay(500); //obliga a esperar que los motores se frenen
+}
+
+void GIRAR_IZQ() {
+  HABILITAR_MOTORES();
+
+//motores IZQ giran anti horario
+  digitalWrite(IN1,LOW);
+  digitalWrite(IN2,HIGH);
+
+//motores DER giran horario
+  digitalWrite(IN3,HIGH);
+  digitalWrite(IN4,LOW);
+}
+
+void GIRAR_DER() {
+  HABILITAR_MOTORES();
+
+//motores IZQ giran horario
+  digitalWrite(IN1,HIGH);
+  digitalWrite(IN2,LOW);
+
+//motores DER giran anti horario
+  digitalWrite(IN3,LOW);
+  digitalWrite(IN4,HIGH);
+  
+}
+
+void loop() {
+//llamamos a las distintaas funciones para realizar los movimientos de prueba
+AVANZAR();
+delay(2000);
+
+STOP();
+
+RETROCESO();
+delay(1500);
+
+STOP();
+delay(500);
+
+GIRAR_IZQ();
+delay(500);
+
+STOP();
+delay(500);
+
+GIRAR_DER();
+delay(500);
+
+STOP();
+delay(5000);
+}
