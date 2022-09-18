@@ -13,17 +13,18 @@
 
 ## Integrantes:
 
-- Carolina Nis
+- Carolina Nis -- https://github.com/Mayte2008
 
-- Fernando Vexenat
+- Fernando Vexenat -- https://github.com/fvexe82
 
-- Rodolfo Paz
+- Rodolfo Paz -- https://github.com/Domi74 
 
-- Andres Montaño
+- Andres Montaño -- https://github.com/maj3210
 
-- Juan Diego Gonzalez Antoniazzi
+- Juan Diego Gonzalez Antoniazzi -- https://github.com/JDGA97
 
-- Leonardo Gonzalez
+- Leonardo Gonzalez -- https://github.com/leolgonzalez
+
 
 ## El Repositorio cuenta con Carpetas donde se especifica las distintas actividades solicitadas por los docentes de la materia.
 
