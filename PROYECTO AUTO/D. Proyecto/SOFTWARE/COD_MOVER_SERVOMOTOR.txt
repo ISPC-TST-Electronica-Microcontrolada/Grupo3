@@ -1,0 +1,119 @@
+/*
+ Servomotor - Auto AGV 
+ Grupo 3
+ Electronica Microcontrolada 
+ TST
+ ISPC
+*/
+
+//Libreria para controlar el Servomotor
+#include <ESP32_Servo.h>
+
+
+//Declaro variable para el control del Servomotor
+ESP32_Servo servoMotor;
+
+
+void setup() {
+
+  //Inicio del monitor serie para mostrar los resultados
+  Serial.begin(9600);
+
+  //Inicio del Servomotor en el Pin D13
+  servoMotor.attach(D13);
+
+}
+
+void loop() {
+
+  //Desplaza a la posicion de 0°
+  servoMotor.write(0);
+
+  //Espera 1 segundos
+  delay(1000);
+
+
+  //Desplaza a la posicion de 30°
+  servoMotor.write(30);
+
+  //Espera 1 segundos
+  delay(1000);
+
+  
+  //Desplaza a la posicion de 60°
+  servoMotor.write(60);
+
+  //Espera 1 segundos
+  delay(1000);
+
+
+  //Desplaza a la posicion de 90°
+  servoMotor.write(90);
+
+  //Espera 1 segundos
+  delay(1000);
+
+
+  //Desplaza a la posicion de 120°
+  servoMotor.write(120);
+
+  //Espera 1 segundos
+  delay(1000);
+
+  
+  //Desplaza a la posicion de 150°
+  servoMotor.write(150);
+
+  //Espera 1 segundos
+  delay(1000);
+
+
+  //Desplaza a la posicion de 180°
+  servoMotor.write(180);
+
+  //Espera 1 segundos
+  delay(1000);
+
+
+  //Desplaza a la posicion de 150°
+  servoMotor.write(150);
+
+  //Espera 1 segundos
+  delay(1000); 
+
+
+  //Desplaza a la posicion de 120°
+  servoMotor.write(120);
+
+  //Espera 1 segundos
+  delay(1000);
+
+
+  //Desplaza a la posicion de 90°
+  servoMotor.write(90);
+
+  //Espera 1 segundos
+  delay(1000);
+
+
+  //Desplaza a la posicion de 60°
+  servoMotor.write(60);
+
+  //Espera 1 segundos
+  delay(1000);
+
+
+  //Desplaza a la posicion de 30°
+  servoMotor.write(30);
+
+  //Espera 1 segundos
+  delay(1000);
+
+
+  //Desplaza a la posicion de 0°
+  servoMotor.write(0);
+
+  //Espera 1 segundos
+  delay(1000);
+
+}
