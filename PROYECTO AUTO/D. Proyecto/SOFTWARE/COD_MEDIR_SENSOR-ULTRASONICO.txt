@@ -1,0 +1,67 @@
+/*
+ Sensor Ultrasonico - Auto AGV 
+ Grupo 3
+ Electronica Microcontrolada 
+ TST
+ ISPC
+*/
+
+//Defino "Trigger" Output
+#define Pin_Trig D12
+
+//Defino "Echo" Input
+#define Pin_Echo D14
+
+
+//Defino la variable "tiempo"
+float tiempo;
+
+//Defino la variable "distancia"
+float distancia;
+
+
+void setup() {
+
+  //Inicio del monitor serie para mostrar los resultados
+  Serial.begin(9600);
+
+  //Configuro el pin de salida
+  pinMode(Pin_Trig, OUTPUT);
+
+  //Configuro el pin de entrada
+  pinMode(Pin_Echo, INPUT);
+  
+}
+
+void loop() {
+
+  //Genero una señal para corrobar que este apagado
+  digitalWrite(Pin_Trig, LOW);
+
+  //Espera 1 segundo
+  delay(500);
+
+
+  //Genero una señal para medir
+  digitalWrite(Pin_Trig, HIGH);
+
+  //Espera 1 segundo
+  delay(500);
+
+  //Genero una señal para apagarlo
+  digitalWrite(Pin_Trig, LOW);
+
+
+  //Toma la medicion
+  tiempo = pulseIn(Pin_Echo, HIGH);
+
+  //Divide el tiempo por 58 (predefinada en la ficha tecnica)
+  distancia = tiempo/58;
+
+
+  //Imprime el resultado en cm
+  Serial.println(distancia, "cm");
+
+  //Espera 1 segundo
+  delay(1000);
+}
