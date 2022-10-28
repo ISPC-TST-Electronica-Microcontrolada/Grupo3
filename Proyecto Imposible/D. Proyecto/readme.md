@@ -1,7 +1,7 @@
 # SECCION QUE DETALLA HARDWARE - SOFTWARE Y SIMULACIONES DEL PROYECTO
 
 ## VIDEO DE PRESENTACION FINAL
-https://drive.google.com/file/d/1x_u6SU7peCqLpuplzUT53U5XgAcasRBa/view?usp=sharing
+
 
 
 ## SIMULACIONES:
