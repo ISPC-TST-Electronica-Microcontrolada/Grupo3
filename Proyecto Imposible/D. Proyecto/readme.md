@@ -4,6 +4,8 @@
 
 https://www.canva.com/design/DAFQWRy1Byc/zDtxxUPuOf14bAC_CO3OJw/watch?utm_content=DAFQWRy1Byc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
 
+mirror: https://www.youtube.com/watch?v=7bYmoouy7SQ
+
 
 ## SIMULACIONES:
 ![ARDUINO](https://user-images.githubusercontent.com/106171748/196045137-49093f44-140f-4d7d-8e46-43baac1f909c.jpg)
